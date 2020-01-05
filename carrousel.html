@@ -9,6 +9,7 @@
 <style>
     body{
         margin: 0;
+        font-family: 'Muli', sans-serif;
     }
     
     .carousel{
@@ -61,29 +62,39 @@
     .carousel-item__details{
         background: linear-gradient(to top, rgba(0,0,0, .9), rgba(0,0,0, 0) 100% );
         font-size: 10px;
-        opacity: 1;
+        opacity: 0;
         transition: 450ms opacity;
         padding: 10px;
         position: absolute;
+        color: white;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
+        justify-content: flex-end
+    }
+
+    .carousel-item__details:hover{
+        opacity: 1;
+    }
+
+    .carousel-item__details img{
+        width: 40px;
     }
 </style>
 <body>
     <section class="carousel">
         <div class="carousel__container">
             <div class="carousel-item">
-                <div class="carousel-item_details">
-                    <img class="carousel-item__img" src="/img/img01.jpg" alt="img01" srcset="">
+                <img class="carousel-item__img" src="/img/img01.jpg" alt="img01" srcset="">
+                <div class="carousel-item__details">
                     <div>
                         <img src="https://img.icons8.com/plasticine/100/000000/play.png">
                         <img src="https://img.icons8.com/plasticine/100/000000/plus-2-math.png">
                     </div>
+                    <p class="carousel-item__details--title">Titulo descripción</p>
+                    <p class="carousel-item__details--subtitle">2019 16+ 119min</p>
                 </div>
-                <p class="carousel-item__details--title">Titulo descripción</p>
-                <p class="carousel-item__details--subtitle">2019 16+ 119min</p>
             </div>
             <div class="carousel-item">
                 
