@@ -144,3 +144,86 @@ body {
 .footer a:hover{
     text-decoration: underline;
 }
+
+/* registro inicio */
+.sinup{
+    background: linear-gradient(#21c08b, #ab88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: cal(100vh - 200px);
+}
+
+.sinup__container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.sinup__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.sinup__container--form label{
+    font-size: 14px;
+}
+
+.sinup__container--remember-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.sinup__container--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.sinup__container--social-media > div > img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.sinup__container--login{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sinup__container--login a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sinup__container--login a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px){
+    .login__container, .sinup__container{
+        background-color: transparent;
+        border: none;
+        padding:0px;
+        width: 100% ;
+    }
+
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
